@@ -1,0 +1,81 @@
+body {
+    background-image: url("https://img.freepik.com/foto-gratis/noche-naturaleza-paisaje-galaxia-montana-agua-estrella-belleza-generativa-ai_188544-9736.jpg?semt=ais_hybrid");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #fdfdfd;
+}
+
+button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #87cefa;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff0000; 
+}
+
+.clicked {
+    background-color: #cc0000;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #fcfcfc;
+}
+
+#textoReglas {
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+#textoReglas ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#textoReglas li {
+    margin-bottom: 10px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#reiniciar {
+    margin-bottom: 10px;
+    background-color: red; 
+}
+
+#reiniciar:hover {
+    background-color: darkred;
+}
+
+#reglas {
+    background-color: #87cefa;
+    color: #fff;
+}
+
+#reglas:hover {
+    background-color: #00ff11;
+}

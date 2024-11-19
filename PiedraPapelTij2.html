@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gogogo</title>
+    <link rel="stylesheet" href="PiedraPapelTij2.css">
+    <script src="PiedraPapelTij2.js" defer></script>
+</head>
+<body>
+
+    <h1>Juego Piedra, Papel, Tijera, Lagarto, Spock</h1>
+    <h2>Haz tu elección:</h2>
+
+    <button id="piedra" onclick="jugar('Piedra')">Piedra</button>
+    <button id="papel" onclick="jugar('Papel')">Papel</button>
+    <button id="tijera" onclick="jugar('Tijera')">Tijera</button>
+    <button id="lagarto" onclick="jugar('Lagarto')">Lagarto</button>
+    <button id="spock" onclick="jugar('Spock')">Spock</button>
+
+    <div class="result" id="resultado"></div>
+
+    <div class="buttons-container">
+        <button id="reiniciar" onclick="reiniciarJuego()" style="display: none;">Intentar de nuevo</button>
+        <button id="reglas" onclick="mostrarReglas()">Reglas</button>
+    </div>
+
+    <div id="textoReglas" style="display: none;">
+        <p>Las reglas del juego son las siguientes:</p>
+        <ul>
+            <li>Piedra vence a Tijera y Lagarto.</li>
+            <li>Papel vence a Piedra y Spock.</li>
+            <li>Tijera vence a Papel y Lagarto.</li>
+            <li>Lagarto vence a Spock y Papel.</li>
+            <li>Spock vence a Tijera y Piedra.</li>
+        </ul>
+        <button onclick="ocultarReglas()">Entendido</button>
+    </div>
+
+    <div>
+        <a href="2_juegos.html">
+            <button>Volver</button>
+        </a>
+    </div>
+
+</body>
+</html>

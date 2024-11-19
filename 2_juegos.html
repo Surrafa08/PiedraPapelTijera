@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gogogo</title>
+    <style>
+        body {
+            background-image: url("https://img.freepik.com/foto-gratis/noche-naturaleza-paisaje-galaxia-montana-agua-estrella-belleza-generativa-ai_188544-9736.jpg?semt=ais_hybrid");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            font-family:sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            color: #f1f1f1;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        button {
+            font-size: 1.2rem;
+            padding: 15px 30px;
+            margin: 15px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            background-color: #87cefa;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background-color: #ff0000;
+            transform: scale(1.1);
+        }
+        button:active {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="bienvenido"></h1>
+    <h1>Selecciona tu modo de juego</h1>
+    <button onclick="location.href='PiedrapapelTij.html'">Piedra, Papel o Tijera</button>
+    <button onclick="location.href='PiedraPapelTij2.html'">
+        Piedra, Papel, Tijera, Lagarto, Spock
+    </button>
+
+    <script>
+        const nombreUsuario = localStorage.getItem("nombreUsuario");
+
+        const mensajeBienvenida = nombreUsuario ? `Bienvenido, ${nombreUsuario}!` : "Bienvenido!";
+        document.getElementById("bienvenido").textContent = mensajeBienvenida;
+    </script>
+</body>
+</html>
